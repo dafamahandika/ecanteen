@@ -32,7 +32,7 @@ $jumlah=  new Jumlah();
                
 
 
-                    <div class="collapse navbar-collapse" id="navbar">
+                    <div class="collapse navbar-collapse navbar-right" id="navbar">
                          <ul class="nav navbar-nav">
                               <li class="active"><a href="index.php"><i class="fa fa-home"></i>Beranda</a></li>
                               <li><a href="#" data-toggle="modal" data-target="#buy"><i class="fa fa-shopping-cart"></i>Beli</a></li>
@@ -95,11 +95,11 @@ $jumlah=  new Jumlah();
           <br>
 
 
-          <div class="modal-fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+          <div class="modal fade" id="buy" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
                <div class="modal-dialog">
                     <div class="modal-content">
                          <div class="modal-header bg-danger" style="border-radius: 5px 5px 0px 0px;">
-                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&time;</button>
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
                     
                               <h4 class="modal-title" id="">Form Pembelian</h4>
                          </div>
@@ -123,7 +123,7 @@ $jumlah=  new Jumlah();
                          
                                    <button type="button" id="btnbakwan" onclick="OnlyBakwan()" class="btn btn-success" style="float: left;">Bakso</button>
 
-                                   <button  type="button" onclick="Keduanya()" class="btn btn-success" style="float: left;">Bakwan & Bakso </button>
+                                   <button type="button" onclick="Keduanya()" class="btn btn-success" style="float: left;">Bakwan & Bakso </button>
 
                                    <button type="button" onclick="exit()" class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"></i> Close</button>
 
@@ -144,33 +144,33 @@ $jumlah=  new Jumlah();
 
 <script type="text/javascript">
      function OnlyBakso() {
-          document.getElementByid("bakso").readOnly= false;
-          document.getElementByid("bakwan").readOnly= true;
+          document.getElementById("bakso").readOnly= false;
+          document.getElementById("bakwan").readOnly= true;
           
-          document.getElementByid("btnbakwan").disabled= false;
-          document.getElementByid("btnbakso").disabled= true;
+          document.getElementById("btnbakwan").disabled= false;
+          document.getElementById("btnbakso").disabled= true;
      }
 
      function OnlyBakwan() {
-          document.getElementByid("bakso").readOnly= true;
-          document.getElementByid("bakwan").readOnly= false;
+          document.getElementById("bakso").readOnly= true;
+          document.getElementById("bakwan").readOnly= false;
 
-          document.getElementByid("btnbakwan").disabled= true;
-          document.getElementByid("btnbakso").disabled= false;
+          document.getElementById("btnbakwan").disabled= true;
+          document.getElementById("btnbakso").disabled= false;
 
      }
 
      function Keduanya() {
-          document.getElementByid("bakso").readOnly= false;
-          document.getElementByid("bakwan").readOnly= false;
+          document.getElementById("bakso").readOnly= false;
+          document.getElementById("bakwan").readOnly= false;
 
-          document.getElementByid("btnbakwan").disabled= false;
-          document.getElementByid("btnbakso").disabled= false;
+          document.getElementById("btnbakwan").disabled= false;
+          document.getElementById("btnbakso").disabled= false;
      }
 
      function exit() {
-          document.getElementByid("bakso").readOnly= true;
-          document.getElementByid("bakwan").readOnly= true;
+          document.getElementById("bakso").readOnly= true;
+          document.getElementById("bakwan").readOnly= true;
      }
 </script>
 
