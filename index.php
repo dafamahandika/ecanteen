@@ -144,16 +144,16 @@ $jumlah=  new Jumlah();
 
 <script type="text/javascript">
      function OnlyBakso() {
-          document.getElementById("bakso").readOnly= false;
-          document.getElementById("bakwan").readOnly= true;
+          document.getElementById("bakso").readOnly= true;
+          document.getElementById("bakwan").readOnly= false;
           
           document.getElementById("btnbakwan").disabled= false;
           document.getElementById("btnbakso").disabled= true;
      }
 
      function OnlyBakwan() {
-          document.getElementById("bakso").readOnly= true;
-          document.getElementById("bakwan").readOnly= false;
+          document.getElementById("bakso").readOnly= false;
+          document.getElementById("bakwan").readOnly= true;
 
           document.getElementById("btnbakwan").disabled= true;
           document.getElementById("btnbakso").disabled= false;
